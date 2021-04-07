@@ -145,7 +145,7 @@ class AMapLocation {
       this.success});
 
   factory AMapLocation.fromMap(Map<dynamic, dynamic> map) => AMapLocation(
-        description: map['description'] as String,
+        description: map['description'],
         code: map['code'] as int,
         timestamp: map['timestamp'] as double,
         speed: map['speed'] as double,
